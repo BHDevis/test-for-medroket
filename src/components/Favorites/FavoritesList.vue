@@ -1,11 +1,6 @@
 <template>
   <div class="favorite-list">
-    <PhotoGrid
-      v-if="favorites.length"
-      :photos="favorites"
-      :isFavorite="() => true"
-      :toggleFavorite="removeFavorite"
-    />
+    <PhotoGrid v-if="favorites.length" :photos="favorites" />
     <div class="empty-favorites" v-else>
       <img src="@/assets/empty.png" />
       <h3>Список избранного пуст</h3>
