@@ -25,10 +25,6 @@ export default defineComponent({
       type: Number as PropType<number>,
       required: true,
     },
-    photoGridRef: {
-      type: Function as PropType<(el: HTMLElement | null) => void>,
-      required: false,
-    },
   },
   data() {
     return {
